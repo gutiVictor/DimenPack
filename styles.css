@@ -1,0 +1,82 @@
+/* styles.css */
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2e2e2e; /* Fondo oscuro para el cuerpo */
+    color: #e0e0e0; /* Texto claro para contraste */
+    margin: 0;
+    padding: 15px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #333; /* Fondo oscuro para el contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* Título blanco para contraste */
+}
+
+label {
+    display: block; /* Cambiado a block para mejor alineación */
+    margin-bottom: 10px;
+    color: #e0e0e0; /* Etiquetas en color claro */
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555; /* Borde gris oscuro */
+    background-color: #444; /* Fondo oscuro para campos de entrada */
+    color: #e0e0e0; /* Texto claro en campos de entrada */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+input:focus, select:focus, button:focus {
+    border-color: #007bff; /* Color de borde al enfocar */
+    outline: none; /* Eliminar el contorno predeterminado del navegador */
+}
+
+button {
+    background-color: #007bff; /* Fondo azul para el botón */
+    color: #fff; /* Texto blanco en el botón */
+    cursor: pointer;
+    padding: 10px;
+    border: none; /* Eliminar el borde predeterminado del botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Fondo azul oscuro al pasar el mouse */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #444; /* Fondo oscuro para el resultado */
+    border: 1px solid #555; /* Borde gris oscuro */
+    border-radius: 4px;
+    color: #e0e0e0; /* Texto claro en el resultado */
+}
+
+/* Agregar o modificar el estilo del botón de reinicio */
+button {
+    background-color: #007bff; /* Fondo azul para el botón */
+    color: #fff; /* Texto blanco en el botón */
+    cursor: pointer;
+    padding: 10px;
+    border: none; /* Eliminar el borde predeterminado del botón */
+    margin-top: 10px; /* Espacio superior para separación */
+}
+
+button:hover {
+    background-color: #0056b3; /* Fondo azul oscuro al pasar el mouse */
+}
+
