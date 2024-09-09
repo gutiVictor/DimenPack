@@ -1,4 +1,31 @@
 let boxes = [];
+let productos = [];
+
+// Cargar productos desde el archivo JSON
+fetch('productos.json')
+    .then(response => response.json())
+    .then(data => productos = data)
+    .catch(error => console.error('Error al cargar productos.json:', error));
+
+function fetchBoxDimensions() {
+    const boxCode = document.getElementById('box-code').value;
+
+    // Buscar el producto que coincida con el código ingresado
+    const boxData = productos.find(product => product.codigo === boxCode);
+
+    if (boxData) {
+        // Si se encuentra, llenar los campos de dimensiones
+        document.getElementById('box-width').value = boxData.ancho;
+        document.getElementById('box-height').value = boxData.alto;
+        document.getElementById('box-length').value = boxData.largo;
+    } else {
+        // Si no se encuentra el código, vaciar los campos
+        document.getElementById('box-width').value = '';
+        document.getElementById('box-height').value = '';
+        document.getElementById('box-length').value = '';
+        alert('Código de caja no encontrado en el archivo JSON.');
+    }
+}
 
 function addBox() {
     const boxWidth = parseFloat(document.getElementById('box-width').value);
@@ -14,7 +41,7 @@ function addBox() {
             quantity: quantity
         });
 
-        // Clear input fields
+        // Limpiar los campos
         document.getElementById('box-width').value = '';
         document.getElementById('box-height').value = '';
         document.getElementById('box-length').value = '';
@@ -85,33 +112,37 @@ function calculate() {
         <p>Porcentaje de Uso del Contenedor: ${percentageUsed.toFixed(2)}%</p>
     `;
 
-    drawContainerChart(containerWidth, containerHeight, containerLength, totalBoxVolume);
+    drawContainerChart(percentageUsed);
 }
 
-function drawContainerChart(containerWidth, containerHeight, containerLength, totalBoxVolume) {
+function drawContainerChart(percentageUsed) {
     const ctx = document.getElementById('containerChart').getContext('2d');
     
     // Reiniciar contexto para evitar superposición de gráficos
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-
-    const containerVolume = containerWidth * containerHeight * containerLength;
-    const percentageUsed = (totalBoxVolume / containerVolume) * 100;
-    const percentageUnused = 100 - percentageUsed;
 
     new Chart(ctx, {
         type: 'pie',
         data: {
             labels: ['Usado', 'No Usado'],
             datasets: [{
-                data: [percentageUsed.toFixed(2), percentageUnused.toFixed(2)],
+                data: [percentageUsed, 100 - percentageUsed],
                 backgroundColor: ['#36A2EB', '#FF6384'],
             }]
         },
         options: {
             responsive: true,
-            title: {
-                display: true,
-                text: 'Porcentaje de Uso del Contenedor'
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return tooltipItem.label + ': ' + tooltipItem.raw.toFixed(2) + '%';
+                        }
+                    }
+                }
             }
         }
     });
