@@ -15,22 +15,20 @@ function fetchBoxDimensions() {
 
     if (boxData) {
         // Si se encuentra, llenar los campos de dimensiones
-        document.getElementById('box-width').value = boxData.ancho;
-        document.getElementById('box-height').value = boxData.alto;
+        
         document.getElementById('box-length').value = boxData.largo;
-    } else {
-        // Si no se encuentra el código, vaciar los campos
-        document.getElementById('box-width').value = '';
-        document.getElementById('box-height').value = '';
-        document.getElementById('box-length').value = '';
-        alert('Código de caja no encontrado en el archivo JSON.');
-    }
+        document.getElementById('box-height').value = boxData.alto;
+        document.getElementById('box-width').value = boxData.ancho;
+   
+    } 
 }
 
 function addBox() {
-    const boxWidth = parseFloat(document.getElementById('box-width').value);
-    const boxHeight = parseFloat(document.getElementById('box-height').value);
+    
     const boxLength = parseFloat(document.getElementById('box-length').value);
+    const boxHeight = parseFloat(document.getElementById('box-height').value);
+    const boxWidth = parseFloat(document.getElementById('box-width').value);
+   
     const quantity = parseInt(document.getElementById('quantity').value);
 
     if (boxWidth > 0 && boxHeight > 0 && boxLength > 0 && quantity > 0) {
@@ -42,9 +40,11 @@ function addBox() {
         });
 
         // Limpiar los campos
-        document.getElementById('box-width').value = '';
-        document.getElementById('box-height').value = '';
+       
         document.getElementById('box-length').value = '';
+        document.getElementById('box-height').value = '';
+        document.getElementById('box-width').value = '';
+      
         document.getElementById('quantity').value = '';
 
         displayBoxes();
