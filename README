@@ -1,0 +1,48 @@
+README
+Calculador de Contenedores Fenix
+Este programa permite calcular la cantidad de contenedores necesarios para almacenar un conjunto de cajas, considerando las dimensiones de cada caja y del contenedor.
+
+Características
+Ingreso de dimensiones de las cajas (largo, alto, ancho).
+Selección de la cantidad de cajas.
+Cálculo del volumen total utilizado y no utilizado en los contenedores.
+Visualización gráfica del porcentaje de uso de los contenedores mediante un gráfico circular.
+Posibilidad de cargar dimensiones de productos mediante un archivo JSON.
+Requisitos
+Navegador web actualizado.
+Archivo productos.json con los productos a utilizar.
+Instalación
+Clona este repositorio en tu máquina local:
+
+bash
+Copiar código
+git clone https://github.com//.git
+Asegúrate de tener el archivo productos.json ubicado en la misma carpeta que los archivos index.html y script.js.
+
+Abre el archivo index.html en tu navegador.
+
+Uso
+Ingreso de las cajas:
+
+Ingresa el código de la caja para buscar sus dimensiones o ingresa las dimensiones manualmente.
+Introduce la cantidad de cajas y agrégalas al cálculo.
+Dimensiones del contenedor:
+
+Introduce las dimensiones interiores del contenedor.
+Cálculo:
+
+Presiona el botón "Calcular" para ver cuántos contenedores son necesarios y el porcentaje de volumen utilizado.
+El gráfico circular mostrará la proporción de volumen usado vs. no usado en el contenedor.
+Reinicio:
+
+Presiona "Reiniciar" para limpiar los campos y empezar un nuevo cálculo.
+Archivos
+index.html: Contiene la estructura del formulario para ingresar los datos.
+style.css: Define los estilos visuales del programa.
+script.js: Lógica de la aplicación, incluyendo los cálculos y la generación de gráficos.
+productos.json: (Opcional) Contiene las dimensiones predefinidas de las cajas.
+Dependencias
+Chart.js: Librería para crear gráficos interactivos.
+
+Creador : Victor Raul Gutierrez Sanabria
+2024 Septiembre

@@ -1,25 +1,38 @@
 let boxes = [];
 let productos = [];
 
+
+
 // Cargar productos desde el archivo JSON
 fetch('productos.json')
     .then(response => response.json())
     .then(data => productos = data)
     .catch(error => console.error('Error al cargar productos.json:', error));
+    
 
-function fetchBoxDimensions() {
-    const boxCode = document.getElementById('box-code').value;
-
-    // Buscar el producto que coincida con el código ingresado
-    const boxData = productos.find(product => product.codigo === boxCode);
-
-    if (boxData) {
-        // Si se encuentra, llenar los campos de dimensiones
-        document.getElementById('box-length').value = boxData.largo;
-        document.getElementById('box-height').value = boxData.alto;
-        document.getElementById('box-width').value = boxData.ancho;
-    } 
-}
+    function fetchBoxDimensions() {
+        const inputElement = document.getElementById('box-code');
+        const boxCode = inputElement.value.toUpperCase();  // Convertir a mayúsculas
+    
+        // Actualizar el valor del input para reflejar las mayúsculas
+        inputElement.value = boxCode;
+    
+        // Buscar el producto que coincida con el código ingresado
+        const boxData = productos.find(product => product.codigo === boxCode);
+    
+        if (boxData) {
+            // Si se encuentra, llenar los campos de dimensiones
+            document.getElementById('box-length').value = boxData.largo;
+            document.getElementById('box-height').value = boxData.alto;
+            document.getElementById('box-width').value = boxData.ancho;
+        } else {
+            // Limpiar los campos si no se encuentra el código
+            document.getElementById('box-length').value = '';
+            document.getElementById('box-height').value = '';
+            document.getElementById('box-width').value = '';
+        }
+    }
+    
 
 function addBox() {
     const boxLength = parseFloat(document.getElementById('box-length').value);
@@ -72,9 +85,11 @@ function displayBoxes() {
 }
 
 function calculate() {
-    let containerWidth = parseFloat(document.getElementById('container-width').value);
-    let containerHeight = parseFloat(document.getElementById('container-height').value);
+   
     let containerLength = parseFloat(document.getElementById('container-length').value);
+    let containerHeight = parseFloat(document.getElementById('container-height').value);
+    let containerWidth = parseFloat(document.getElementById('container-width').value);
+   
 
     if (containerWidth <= 0 || containerHeight <= 0 || containerLength <= 0) {
         alert('Por favor, ingrese dimensiones válidas para el contenedor.');
@@ -107,7 +122,7 @@ function calculate() {
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML += `
         <h2>Resultado del Cálculo</h2>
-        <p>Dimensiones Interiores del Contenedor: ${containerWidth}x${containerHeight}x${containerLength} cm</p>
+        <p>Dimensiones Interiores del Contenedor: ${containerLength}x${containerHeight}x${containerWidth} cm</p>
         <p>Volumen del Contenedor (Interior): ${containerVolumeInterior} cm³</p>
         <p>Cantidad Total de Cajas: ${boxes.reduce((total, box) => total + box.quantity, 0)}</p>
         <p>Cantidad de Contenedores Necesarios: ${containersNeeded}</p>
