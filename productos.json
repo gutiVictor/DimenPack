@@ -972,27 +972,27 @@
             },
             {
               "codigo": "PF3990-1",
-              "largo": "9 Cm",
-              "alto": "9 Cm",
-              "ancho": "23 Cm"
+              "largo": 9,
+              "alto": 9,
+              "ancho": 23
             },
             {
               "codigo": "PF3990-2",
-              "largo": "9 Cm",
-              "alto": "9 Cm",
-              "ancho": "23 Cm"
+              "largo": 9,
+              "alto": 9,
+              "ancho": 23
             },
             {
               "codigo": "PF3995-1",
-              "largo": "9 Cm",
-              "alto": "23,5 Cm",
-              "ancho": "15,5 Cm"
+              "largo": 9,
+              "alto": 23.5,
+              "ancho": 15.5
             },
             {
               "codigo": "PF3995-2",
-              "largo": "9 Cm",
-              "alto": "23,5 Cm",
-              "ancho": "15,5 Cm"
+              "largo": 9,
+              "alto": 23.5,
+              "ancho": 15.5
             },
             {
               "codigo": "PF4000-1",

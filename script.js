@@ -15,20 +15,16 @@ function fetchBoxDimensions() {
 
     if (boxData) {
         // Si se encuentra, llenar los campos de dimensiones
-        
         document.getElementById('box-length').value = boxData.largo;
         document.getElementById('box-height').value = boxData.alto;
         document.getElementById('box-width').value = boxData.ancho;
-   
     } 
 }
 
 function addBox() {
-    
     const boxLength = parseFloat(document.getElementById('box-length').value);
     const boxHeight = parseFloat(document.getElementById('box-height').value);
     const boxWidth = parseFloat(document.getElementById('box-width').value);
-   
     const quantity = parseInt(document.getElementById('quantity').value);
 
     if (boxWidth > 0 && boxHeight > 0 && boxLength > 0 && quantity > 0) {
@@ -40,17 +36,20 @@ function addBox() {
         });
 
         // Limpiar los campos
-       
         document.getElementById('box-length').value = '';
         document.getElementById('box-height').value = '';
         document.getElementById('box-width').value = '';
-      
         document.getElementById('quantity').value = '';
 
         displayBoxes();
     } else {
         alert('Por favor, ingresa dimensiones y cantidad válidas.');
     }
+}
+
+function removeBox(index) {
+    boxes.splice(index, 1);
+    displayBoxes();
 }
 
 function displayBoxes() {
@@ -63,7 +62,12 @@ function displayBoxes() {
         const totalBoxVolume = boxVolume * box.quantity;
         totalVolume += totalBoxVolume;
 
-        resultDiv.innerHTML += `<p>Caja ${index + 1}: ${box.quantity} cajas (${box.width}x${box.height}x${box.length} cm) - Volumen Total: ${totalBoxVolume} cm³</p>`;
+        resultDiv.innerHTML += `
+            <p>
+                Caja ${index + 1}: ${box.quantity} cajas (${box.width}x${box.height}x${box.length} cm) - Volumen Total: ${totalBoxVolume} cm³
+                <button type="button" onclick="removeBox(${index})">Eliminar</button>
+            </p>
+        `;
     });
 }
 
