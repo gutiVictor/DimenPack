@@ -13,25 +13,28 @@ fetch('productos.json')
     function fetchBoxDimensions() {
         const inputElement = document.getElementById('box-code');
         const boxCode = inputElement.value.toUpperCase();  // Convertir a mayúsculas
-    
+        
         // Actualizar el valor del input para reflejar las mayúsculas
         inputElement.value = boxCode;
-    
+        
         // Buscar el producto que coincida con el código ingresado
         const boxData = productos.find(product => product.codigo === boxCode);
-    
+        
         if (boxData) {
-            // Si se encuentra, llenar los campos de dimensiones
+            // Si se encuentra, llenar los campos de dimensiones y tipo de empaque
             document.getElementById('box-length').value = boxData.largo;
             document.getElementById('box-height').value = boxData.alto;
             document.getElementById('box-width').value = boxData.ancho;
+            document.getElementById('box-package-type').value = boxData.tipo_empaque;
         } else {
             // Limpiar los campos si no se encuentra el código
             document.getElementById('box-length').value = '';
             document.getElementById('box-height').value = '';
             document.getElementById('box-width').value = '';
+            document.getElementById('box-package-type').value = '';
         }
     }
+    
     
 
 function addBox() {

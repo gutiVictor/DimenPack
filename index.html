@@ -13,6 +13,11 @@
             <div id="box-section" class="section">
                 <label for="box-code">Código de la caja:</label>
                 <input type="text" id="box-code" oninput="fetchBoxDimensions()" placeholder="Ingresa el código">
+
+                <label for="box-package-type">Tipo de empaque:</label>
+                <input type="text" id="box-package-type" readonly>
+                
+
                 <label for="box-length">Largo de la caja (cm):</label>
                 <input type="number" id="box-length" min="1" required>
                 <label for="box-height">Alto de la caja (cm):</label>
