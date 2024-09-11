@@ -38,8 +38,8 @@ function addBox() {
     const boxWidth = parseFloat(document.getElementById('box-width').value);
     const quantity = parseInt(document.getElementById('quantity').value);
 
-    if (boxWidth > 0 && boxHeight > 0 && boxLength > 0 && quantity > 0) {
-        boxes.push({ width: boxWidth, height: boxHeight, length: boxLength, quantity: quantity });
+    if ( boxLength> 0 && boxHeight > 0 && boxWidth > 0 && quantity > 0) {
+        boxes.push({  length: boxLength, height: boxHeight,width: boxWidth , quantity: quantity });
 
         // Limpiar campos después de añadir
         document.getElementById('box-length').value = '';
@@ -66,13 +66,13 @@ function displayBoxes() {
 
     let totalVolume = 0;
     boxes.forEach((box, index) => {
-        const boxVolume = box.width * box.height * box.length;
+        const boxVolume =  box.length * box.height *box.width ;
         const totalBoxVolume = boxVolume * box.quantity;
         totalVolume += totalBoxVolume;
 
         resultDiv.innerHTML += `
             <p>
-                Caja ${index + 1}: ${box.quantity} cajas (${box.length}x${box.height}x${box.width} cm) - Volumen Total: ${totalBoxVolume} cm³
+                Caja ${index + 1}: ${box.quantity} cajas (${box.length}x${box.height}x${box.width} cm) - Volumen Total: ${totalBoxVolume.toFixed(2)} cm³
                 <button type="button" onclick="removeBox(${index})">Eliminar</button>
             </p>
         `;
@@ -99,13 +99,13 @@ function selectPredefinedContainer() {
     let containerDimensions;
     switch (containerSelect.value) {
         case '1':
-            containerDimensions = { length: 40, height: 30, width: 55 };
+            containerDimensions = { length: 64, height: 38, width: 50 };
             break;
         case '2':
-            containerDimensions = { length: 45, height: 87, width: 120 };
+            containerDimensions = { length: 44, height: 23, width: 36 };
             break;
         case '3':
-            containerDimensions = { length: 67, height: 87, width: 99 };
+            containerDimensions = { length: 25, height: 17, width: 20 };
             break;
     }
 
@@ -146,7 +146,7 @@ function calculate() {
     containerHeight -= 0.5;
     containerLength -= 0.5;
 
-    if (containerWidth <= 0 || containerHeight <= 0 || containerLength <= 0) {
+    if (containerLength <= 0 || containerHeight <= 0 || containerWidth  <= 0) {
         alert('Las dimensiones interiores del contenedor deben ser mayores a cero después del ajuste.');
         return;
     }
@@ -164,16 +164,43 @@ function calculate() {
     const volumeUnused = volumeUsed - totalBoxVolume;
     const percentageUsed = (totalBoxVolume / volumeUsed) * 100;
 
+    // Detalles de cada caja
+    const volumePerBoxType = boxes.reduce((acc, box) => acc + (box.length * box.height * box.width) * box.quantity, 0);
+    const unusedSpace = containerVolumeInterior - totalBoxVolume;
+    const efficiency = (totalBoxVolume / containerVolumeInterior) * 100;
+
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `
         <h2>Resultado del Cálculo</h2>
-        <p>Dimensiones Interiores del Contenedor: ${containerLength}x${containerHeight}x${containerWidth} cm</p>
-        <p>Volumen del Contenedor (Interior): ${containerVolumeInterior} cm³</p>
-        <p>Cantidad Total de Cajas: ${boxes.reduce((total, box) => total + box.quantity, 0)}</p>
-        <p>Cantidad de Contenedores Necesarios: ${containersNeeded}</p>
-        <p>Volumen Total Utilizado: ${totalBoxVolume} cm³</p>
-        <p>Volumen No Utilizado: ${volumeUnused} cm³</p>
-        <p>Porcentaje de Uso del Contenedor: ${percentageUsed.toFixed(2)}%</p>
+        <p><strong>Dimensiones Interiores del Contenedor:</strong> ${containerLength}x${containerHeight}x${containerWidth} cm</p>
+        <p><strong>Volumen del Contenedor (Interior):</strong> ${containerVolumeInterior.toFixed(2)} cm³</p>
+        <p><strong>Cantidad Total de Cajas:</strong> ${boxes.reduce((total, box) => total + box.quantity, 0)}</p>
+        <p><strong>Cantidad de Contenedores Necesarios:</strong> ${containersNeeded}</p>
+        <p><strong>Volumen Total Utilizado:</strong> ${totalBoxVolume.toFixed(2)} cm³</p>
+        <p><strong>Volumen No Utilizado:</strong> ${volumeUnused.toFixed(2)} cm³</p>
+        <p><strong>Porcentaje de Uso del Contenedor:</strong> ${percentageUsed.toFixed(2)}%</p>
+        <h3>Detalles por Caja</h3>
+    `;
+
+    boxes.forEach((box, index) => {
+        const boxVolume = box.length * box.height * box.width;
+        const totalBoxVolume = boxVolume * box.quantity;
+        resultDiv.innerHTML += `
+            <p><strong>Caja ${index + 1}:</strong></p>
+            <ul>
+                <li><strong>Cantidad:</strong> ${box.quantity}</li>
+                <li><strong>Dimensiones:</strong> ${box.length}x${box.height}x${box.width} cm</li>
+                <li><strong>Volumen por Caja:</strong> ${boxVolume.toFixed(2)} cm³</li>
+                <li><strong>Volumen Total (para todas las cajas de este tipo):</strong> ${totalBoxVolume.toFixed(2)} cm³</li>
+            </ul>
+        `;
+    });
+
+    resultDiv.innerHTML += `
+        <h3>Información Adicional</h3>
+        <p><strong>Volumen Total de Todas las Cajas:</strong> ${volumePerBoxType.toFixed(2)} cm³</p>
+        <p><strong>Espacio No Utilizado en el Contenedor:</strong> ${unusedSpace.toFixed(2)} cm³</p>
+        <p><strong>Eficiencia del Empaque:</strong> ${efficiency.toFixed(2)}%</p>
     `;
 
     drawContainerChart(percentageUsed);  // Dibujar gráfico
