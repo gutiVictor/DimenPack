@@ -1,17 +1,1682 @@
 [
-	{
-		"codigo": "PF101",
-		"largo": 27,
-		"alto": 13,
-		"ancho": 10.5,
-		"tipo_empaque": "Cartón"
-	},
-	{
-		"codigo": "PF102",
-		"largo": 30,
-		"alto": 15,
-		"ancho": 12,
-		"tipo_empaque": "Plástico"
-	}
-	
+  {
+    "codigo": "PF101",
+    "largo": 27,
+    "alto": 13,
+    "ancho": 10.5,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF101PR",
+    "largo": 27,
+    "alto": 13,
+    "ancho": 10.5,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF101B",
+    "largo": 27,
+    "alto": 13,
+    "ancho": 10.5,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF102",
+    "largo": 27,
+    "alto": 12,
+    "ancho": 10.5,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF102B",
+    "largo": 27,
+    "alto": 12,
+    "ancho": 10.5,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF102J",
+    "largo": 27,
+    "alto": 14,
+    "ancho": 10.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF102F",
+    "largo": 27,
+    "alto": 12,
+    "ancho": 10.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF102M",
+    "largo": 27,
+    "alto": 12,
+    "ancho": 10.5,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF102P",
+    "largo": 27,
+    "alto": 12,
+    "ancho": 10.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF102PG",
+    "largo": 27,
+    "alto": 14,
+    "ancho": 10.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF104B",
+    "largo": 41,
+    "alto": 12,
+    "ancho": 10.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF104JF",
+    "largo": 41,
+    "alto": 14,
+    "ancho": 10.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF104PG",
+    "largo": 41,
+    "alto": 14,
+    "ancho": 10.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF106B",
+    "largo": 27,
+    "alto": 13,
+    "ancho": 10.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF107",
+    "largo": 41,
+    "alto": 14,
+    "ancho": 10.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF110",
+    "largo": 35,
+    "alto": 17,
+    "ancho": 13,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF110PR",
+    "largo": 35,
+    "alto": 16,
+    "ancho": 13,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF130",
+    "largo": 18.5,
+    "alto": 7,
+    "ancho": 8,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF135",
+    "largo": 22,
+    "alto": 9,
+    "ancho": 12,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF135B",
+    "largo": 22,
+    "alto": 9,
+    "ancho": 12,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF140",
+    "largo": 18.5,
+    "alto": 7,
+    "ancho": 24,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF145",
+    "largo": 27,
+    "alto": 9,
+    "ancho": 19,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF150-1",
+    "largo": 32,
+    "alto": 10,
+    "ancho": 24,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF150-2",
+    "largo": 32,
+    "alto": 10,
+    "ancho": 24,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF150X2-1",
+    "largo": 12,
+    "alto": 8,
+    "ancho": 15,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF150X2-2",
+    "largo": 12,
+    "alto": 8,
+    "ancho": 15,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF151-1",
+    "largo": 12,
+    "alto": 9,
+    "ancho": 8,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF151-2",
+    "largo": 12,
+    "alto": 9,
+    "ancho": 8,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF155-1",
+    "largo": 9,
+    "alto": 9.5,
+    "ancho": 48,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF155-2",
+    "largo": 9,
+    "alto": 9.5,
+    "ancho": 48,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF205B",
+    "largo": 14,
+    "alto": 8,
+    "ancho": 9.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF210",
+    "largo": 17,
+    "alto": 8.5,
+    "ancho": 11,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF215",
+    "largo": 30,
+    "alto": 9,
+    "ancho": 31,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF221",
+    "largo": 15,
+    "alto": 6,
+    "ancho": 10,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF300N",
+    "largo": 42,
+    "alto": 22,
+    "ancho": 17,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF300NB",
+    "largo": 42,
+    "alto": 25,
+    "ancho": 17,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF300NP",
+    "largo": 42,
+    "alto": 23,
+    "ancho": 17,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF400",
+    "largo": 33,
+    "alto": 21,
+    "ancho": 36,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF450",
+    "largo": 33,
+    "alto": 21,
+    "ancho": 36,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF460",
+    "largo": 33,
+    "alto": 21,
+    "ancho": 36,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF500",
+    "largo": 31,
+    "alto": 16,
+    "ancho": 18,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF500B",
+    "largo": 32,
+    "alto": 16,
+    "ancho": 18,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF550",
+    "largo": 47,
+    "alto": 19,
+    "ancho": 19,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF550B",
+    "largo": 47,
+    "alto": 19,
+    "ancho": 19,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF550PR",
+    "largo": 47,
+    "alto": 22,
+    "ancho": 19,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF551",
+    "largo": 45,
+    "alto": 20,
+    "ancho": 19,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF553",
+    "largo": 46,
+    "alto": 22,
+    "ancho": 19,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF554",
+    "largo": 83,
+    "alto": 17,
+    "ancho": 21,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF560",
+    "largo": 41,
+    "alto": 24,
+    "ancho": 29,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF610",
+    "largo": 28,
+    "alto": 19,
+    "ancho": 14,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF620",
+    "largo": 36,
+    "alto": 8,
+    "ancho": 16,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF640",
+    "largo": 30,
+    "alto": 18,
+    "ancho": 16,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF715",
+    "largo": 36,
+    "alto": 20,
+    "ancho": 19,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF720",
+    "largo": 33,
+    "alto": 20,
+    "ancho": 19,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF725",
+    "largo": 33,
+    "alto": 20,
+    "ancho": 19,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF730",
+    "largo": 34,
+    "alto": 26,
+    "ancho": 19,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF825",
+    "largo": 30,
+    "alto": 9,
+    "ancho": 20,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF830",
+    "largo": 44,
+    "alto": 47,
+    "ancho": 27,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF835",
+    "largo": 0,
+    "alto": 0,
+    "ancho": 0,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF835C",
+    "largo": 37,
+    "alto": 23,
+    "ancho": 28,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF840",
+    "largo": 35,
+    "alto": 20,
+    "ancho": 23,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF850",
+    "largo": 10.5,
+    "alto": 51,
+    "ancho": 31,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF855",
+    "largo": 32,
+    "alto": 35.5,
+    "ancho": 34.5,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF861",
+    "largo": 12,
+    "alto": 59,
+    "ancho": 49.2,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF860",
+    "largo": 12,
+    "alto": 59,
+    "ancho": 49.2,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF870",
+    "largo": 12,
+    "alto": 47,
+    "ancho": 37,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF890-1",
+    "largo": 34,
+    "alto": 25,
+    "ancho": 23,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF890-2",
+    "largo": 34,
+    "alto": 20,
+    "ancho": 22,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF900-1",
+    "largo": 74,
+    "alto": 40,
+    "ancho": 41,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF900R",
+    "largo": 74,
+    "alto": 40,
+    "ancho": 41,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF902",
+    "largo": 77,
+    "alto": 43,
+    "ancho": 41,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF905-1",
+    "largo": 65,
+    "alto": 39,
+    "ancho": 30,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF905-2",
+    "largo": 65,
+    "alto": 39,
+    "ancho": 30,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF906",
+    "largo": 65,
+    "alto": 39,
+    "ancho": 30,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF910-1",
+    "largo": 65,
+    "alto": 44,
+    "ancho": 35,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF910-2",
+    "largo": 65,
+    "alto": 44,
+    "ancho": 33,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF915",
+    "largo": 50,
+    "alto": 42,
+    "ancho": 35,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF920",
+    "largo": 45,
+    "alto": 31,
+    "ancho": 27,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF930-1",
+    "largo": 50,
+    "alto": 40,
+    "ancho": 25,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF930-2",
+    "largo": 50,
+    "alto": 40,
+    "ancho": 25,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF930C-1",
+    "largo": 63,
+    "alto": 28,
+    "ancho": 29,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF930C-2",
+    "largo": 63,
+    "alto": 28,
+    "ancho": 29,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF932",
+    "largo": 63,
+    "alto": 28,
+    "ancho": 29,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF934",
+    "largo": 63,
+    "alto": 28,
+    "ancho": 29,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF936",
+    "largo": 63,
+    "alto": 28,
+    "ancho": 29,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF938",
+    "largo": 63,
+    "alto": 28,
+    "ancho": 29,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF940-1",
+    "largo": 69,
+    "alto": 30,
+    "ancho": 28,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF940-2",
+    "largo": 69,
+    "alto": 30,
+    "ancho": 28,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF947-1",
+    "largo": 56,
+    "alto": 43,
+    "ancho": 42,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF947-2",
+    "largo": 56,
+    "alto": 43,
+    "ancho": 42,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF950-1",
+    "largo": 44,
+    "alto": 26,
+    "ancho": 24,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF950B-1",
+    "largo": 44,
+    "alto": 26,
+    "ancho": 24,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF950-2",
+    "largo": 44,
+    "alto": 26,
+    "ancho": 24,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF960-1",
+    "largo": 69,
+    "alto": 33,
+    "ancho": 27,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF960-2",
+    "largo": 69,
+    "alto": 33,
+    "ancho": 27,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF965",
+    "largo": 67,
+    "alto": 37,
+    "ancho": 28,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF1500-1",
+    "largo": 80,
+    "alto": 48,
+    "ancho": 47,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1500-2",
+    "largo": 80,
+    "alto": 48,
+    "ancho": 47,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1505-1",
+    "largo": 86,
+    "alto": 54.5,
+    "ancho": 49,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1505-2",
+    "largo": 86,
+    "alto": 54.5,
+    "ancho": 49,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1510-1",
+    "largo": 58,
+    "alto": 46,
+    "ancho": 37,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1510-2",
+    "largo": 58,
+    "alto": 46,
+    "ancho": 37,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1520-1",
+    "largo": 72,
+    "alto": 53,
+    "ancho": 54,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1520-2",
+    "largo": 72,
+    "alto": 53,
+    "ancho": 54,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1520R",
+    "largo": 72,
+    "alto": 53,
+    "ancho": 54,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1525-1",
+    "largo": 72,
+    "alto": 53,
+    "ancho": 54,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1525-2",
+    "largo": 72,
+    "alto": 53,
+    "ancho": 54,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1530-1",
+    "largo": 61,
+    "alto": 48,
+    "ancho": 32,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1530-2",
+    "largo": 61,
+    "alto": 48,
+    "ancho": 32,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1530R",
+    "largo": 61,
+    "alto": 48,
+    "ancho": 32,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1540-1",
+    "largo": 85,
+    "alto": 60,
+    "ancho": 52,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1540-2",
+    "largo": 85,
+    "alto": 60,
+    "ancho": 52,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1550-1",
+    "largo": 69,
+    "alto": 54,
+    "ancho": 51,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF1550-2",
+    "largo": 69,
+    "alto": 54,
+    "ancho": 51,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF2550",
+    "largo": 43,
+    "alto": 11,
+    "ancho": 24,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3020-1",
+    "largo": 34,
+    "alto": 10,
+    "ancho": 20,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3020-2",
+    "largo": 34,
+    "alto": 10,
+    "ancho": 20,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3022-1",
+    "largo": 38,
+    "alto": 10,
+    "ancho": 20,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3022-2",
+    "largo": 38,
+    "alto": 10,
+    "ancho": 20,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3024-1",
+    "largo": 40,
+    "alto": 10,
+    "ancho": 30,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3024-2",
+    "largo": 40,
+    "alto": 10,
+    "ancho": 30,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3026-1",
+    "largo": 11,
+    "alto": 11,
+    "ancho": 11,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3026-2",
+    "largo": 11,
+    "alto": 11,
+    "ancho": 11,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3028-1",
+    "largo": 24,
+    "alto": 25,
+    "ancho": 14,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3028-2",
+    "largo": 24,
+    "alto": 25,
+    "ancho": 14,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3030-1",
+    "largo": 21,
+    "alto": 21,
+    "ancho": 12,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3030-2",
+    "largo": 21,
+    "alto": 21,
+    "ancho": 12,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3035",
+    "largo": 12,
+    "alto": 21,
+    "ancho": 19,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3500",
+    "largo": 4,
+    "alto": 30,
+    "ancho": 19,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3505-1",
+    "largo": 35,
+    "alto": 34,
+    "ancho": 23,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3505-2",
+    "largo": 35,
+    "alto": 34,
+    "ancho": 23,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3510-1",
+    "largo": 23,
+    "alto": 35,
+    "ancho": 23,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3510-2",
+    "largo": 23,
+    "alto": 35,
+    "ancho": 23,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3515",
+    "largo": null,
+    "alto": null,
+    "ancho": null,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF3520-1",
+    "largo": 59,
+    "alto": 59,
+    "ancho": 10,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3520-2",
+    "largo": 59,
+    "alto": 59,
+    "ancho": 10,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3525-1",
+    "largo": 67,
+    "alto": 19,
+    "ancho": 19,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3525-2",
+    "largo": 67,
+    "alto": 19,
+    "ancho": 19,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3530",
+    "largo": 14,
+    "alto": 19,
+    "ancho": 20,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3535",
+    "largo": 14,
+    "alto": 19,
+    "ancho": 20,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3540-1",
+    "largo": 16,
+    "alto": 32,
+    "ancho": 16,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3540-2",
+    "largo": 16,
+    "alto": 32,
+    "ancho": 16,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF3545",
+    "largo": 12,
+    "alto": 68,
+    "ancho": 41,
+    "tipo_empaque": "Carton"
+  },
+  {
+    "codigo": "PF3550",
+    "largo": 4,
+    "alto": 22,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3560",
+    "largo": 4,
+    "alto": 22,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3570",
+    "largo": 4,
+    "alto": 22,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3580",
+    "largo": 4,
+    "alto": 22,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3590",
+    "largo": 4,
+    "alto": 22,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3600",
+    "largo": 4,
+    "alto": 22,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3620",
+    "largo": 4,
+    "alto": 22,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3630",
+    "largo": 4,
+    "alto": 22,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3640",
+    "largo": 4,
+    "alto": 22,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3650",
+    "largo": 4,
+    "alto": 22,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3800",
+    "largo": 10,
+    "alto": 30,
+    "ancho": 20,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3810",
+    "largo": 10,
+    "alto": 30,
+    "ancho": 20,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3900",
+    "largo": 47.5,
+    "alto": 9,
+    "ancho": 20,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF3900-2",
+    "largo": 47.5,
+    "alto": 9,
+    "ancho": 20,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF3940-1",
+    "largo": 100,
+    "alto": 36,
+    "ancho": 25,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF3940-2",
+    "largo": 100,
+    "alto": 36,
+    "ancho": 25,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF3950-1",
+    "largo": 20,
+    "alto": 32,
+    "ancho": 63,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3950-2",
+    "largo": 20,
+    "alto": 32,
+    "ancho": 63,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3990-1",
+    "largo": 9,
+    "alto": 9,
+    "ancho": 23,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF3990-2",
+    "largo": 9,
+    "alto": 9,
+    "ancho": 23,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF3995-1",
+    "largo": 9,
+    "alto": 23.5,
+    "ancho": 15.5,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF3995-2",
+    "largo": 9,
+    "alto": 23.5,
+    "ancho": 15.5,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF4000-1",
+    "largo": 17,
+    "alto": 61,
+    "ancho": 128,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4000-2",
+    "largo": 17,
+    "alto": 61,
+    "ancho": 128,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4020-1",
+    "largo": 42,
+    "alto": 55,
+    "ancho": 45,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4020-2",
+    "largo": 42,
+    "alto": 55,
+    "ancho": 45,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4050-1",
+    "largo": 18,
+    "alto": 58,
+    "ancho": 170,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4050-2",
+    "largo": 18,
+    "alto": 58,
+    "ancho": 170,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4100-1",
+    "largo": 44,
+    "alto": 44.5,
+    "ancho": 69,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4100-2",
+    "largo": 44,
+    "alto": 44.5,
+    "ancho": 69,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4170-1",
+    "largo": 19,
+    "alto": 81.4,
+    "ancho": 104.5,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4170-2",
+    "largo": 19,
+    "alto": 81.4,
+    "ancho": 104.5,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4180-1",
+    "largo": 28.8,
+    "alto": 81.8,
+    "ancho": 105.6,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4180-2",
+    "largo": 28.8,
+    "alto": 81.8,
+    "ancho": 105.6,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4150-1",
+    "largo": 15,
+    "alto": 76,
+    "ancho": 134,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4150-2",
+    "largo": 15,
+    "alto": 76,
+    "ancho": 134,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4200-1",
+    "largo": 23,
+    "alto": 35,
+    "ancho": 94,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4300-1",
+    "largo": 10,
+    "alto": 57,
+    "ancho": 33,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF4350-1",
+    "largo": 37.5,
+    "alto": 58,
+    "ancho": 36,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF4355-1",
+    "largo": 58,
+    "alto": 59,
+    "ancho": 50,
+    "tipo_empaque": "Vinipel"
+  },
+  {
+    "codigo": "PF4360-1",
+    "largo": 33,
+    "alto": 48,
+    "ancho": 46,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF4370-1",
+    "largo": 31,
+    "alto": 56,
+    "ancho": 35,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF4500-1",
+    "largo": 63,
+    "alto": 25,
+    "ancho": 33,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF4505",
+    "largo": 62,
+    "alto": 7,
+    "ancho": 15,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF4510",
+    "largo": 12,
+    "alto": 16,
+    "ancho": 12,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF4520",
+    "largo": 34,
+    "alto": 20,
+    "ancho": 65,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF4530",
+    "largo": 57,
+    "alto": 42,
+    "ancho": 50,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF4535",
+    "largo": 48,
+    "alto": 46,
+    "ancho": 49,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF4700",
+    "largo": 35,
+    "alto": 20,
+    "ancho": 23,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "AT0001",
+    "largo": 13,
+    "alto": 20,
+    "ancho": 8,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "AT0004",
+    "largo": 9,
+    "alto": 16,
+    "ancho": 15,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "AT0006",
+    "largo": 18,
+    "alto": 21,
+    "ancho": 13,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "AT0007",
+    "largo": 17,
+    "alto": 24,
+    "ancho": 9,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "AT0008",
+    "largo": 12,
+    "alto": 22,
+    "ancho": 22,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "AT0010",
+    "largo": 26,
+    "alto": 16,
+    "ancho": 14,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "AT0011",
+    "largo": 23,
+    "alto": 15,
+    "ancho": 14,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF4130-1",
+    "largo": 23,
+    "alto": 36,
+    "ancho": 39,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4130-2",
+    "largo": 23,
+    "alto": 36,
+    "ancho": 39,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3955-1",
+    "largo": 24,
+    "alto": 23,
+    "ancho": 70,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF3955-2",
+    "largo": 24,
+    "alto": 23,
+    "ancho": 70,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4518",
+    "largo": 11,
+    "alto": 23,
+    "ancho": 31,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4508",
+    "largo": 21,
+    "alto": 21,
+    "ancho": 12,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF831",
+    "largo": 44,
+    "alto": 47,
+    "ancho": 27,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF850B",
+    "largo": 50,
+    "alto": 51,
+    "ancho": 27,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF4120-2",
+    "largo": 12,
+    "alto": 58.5,
+    "ancho": 44,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF4120-1",
+    "largo": 12,
+    "alto": 58.5,
+    "ancho": 44,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF4115-2",
+    "largo": 42,
+    "alto": 58.5,
+    "ancho": 28.5,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF4115-1",
+    "largo": 42,
+    "alto": 58.5,
+    "ancho": 28.5,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF893-2",
+    "largo": null,
+    "alto": null,
+    "ancho": null,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF893-1",
+    "largo": null,
+    "alto": null,
+    "ancho": null,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF970-2",
+    "largo": 61.5,
+    "alto": 41.5,
+    "ancho": 37,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF970-1",
+    "largo": 61.5,
+    "alto": 41.5,
+    "ancho": 37,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF955-1",
+    "largo": 62,
+    "alto": 34,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF955-2",
+    "largo": 62,
+    "alto": 34,
+    "ancho": 34,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF120",
+    "largo": 40.5,
+    "alto": 27,
+    "ancho": 14,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF114",
+    "largo": 22,
+    "alto": 17.5,
+    "ancho": 11,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF118",
+    "largo": 22,
+    "alto": 17.5,
+    "ancho": 11,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF116",
+    "largo": 16,
+    "alto": 13,
+    "ancho": 11,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF112",
+    "largo": 17,
+    "alto": 13,
+    "ancho": 11,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF966",
+    "largo": 67,
+    "alto": 37,
+    "ancho": 28,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF4131-1",
+    "largo": 39,
+    "alto": 23,
+    "ancho": 30,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF4131-2",
+    "largo": 39,
+    "alto": 23,
+    "ancho": 30,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF122",
+    "largo": 34.5,
+    "alto": 23,
+    "ancho": 23,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF121",
+    "largo": 22,
+    "alto": 19,
+    "ancho": 12,
+    "tipo_empaque": "Caja individual"
+  },
+  {
+    "codigo": "PF152",
+    "largo": null,
+    "alto": null,
+    "ancho": null,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF153",
+    "largo": null,
+    "alto": null,
+    "ancho": null,
+    "tipo_empaque": null
+  },
+  {
+    "codigo": "PF826",
+    "largo": null,
+    "alto": null,
+    "ancho": null,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF101pg",
+    "largo": 31,
+    "alto": 16,
+    "ancho": 12,
+    "tipo_empaque": "Malla"
+  },
+  {
+    "codigo": "PF156",
+    "largo": 12.5,
+    "alto": 16.5,
+    "ancho": 12,
+    "tipo_empaque": "N/A"
+  },
+  {
+    "codigo": "PF726",
+    "largo": 38,
+    "alto": 24.5,
+    "ancho": 20.5,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF4140-2",
+    "largo": 98,
+    "alto": 25,
+    "ancho": 60,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF4140-1",
+    "largo": 98,
+    "alto": 25,
+    "ancho": 60,
+    "tipo_empaque": "Bolsa"
+  },
+  {
+    "codigo": "PF961",
+    "largo": null,
+    "alto": null,
+    "ancho": null,
+    "tipo_empaque": null
+  },
+  {
+    "codigo": "PF3043",
+    "largo": 23,
+    "alto": 23,
+    "ancho": 11.4,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3040",
+    "largo": 21.4,
+    "alto": 21.4,
+    "ancho": 10,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3041",
+    "largo": 33,
+    "alto": 26,
+    "ancho": 12,
+    "tipo_empaque": "Bolsa PVC"
+  },
+  {
+    "codigo": "PF3042",
+    "largo": 23,
+    "alto": 23,
+    "ancho": 9.5,
+    "tipo_empaque": "Bolsa PVC"
+  }
 ]
