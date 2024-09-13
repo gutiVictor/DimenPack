@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 350px;
     margin: auto;
     background: #333; /* Fondo oscuro para el contenedor */
     padding: 20px;
